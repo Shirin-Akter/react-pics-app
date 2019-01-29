@@ -1,13 +1,12 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 
-// const App = () => {
+class App extends React.Component {
 
-
-class App extends React.Component{ 
     onSearchSubmit(term){
-        
+        console.log(term);
     }
+
     render(){
         return (
             <div className="ui container" style={{marginTop: '10px'}}>
@@ -15,7 +14,6 @@ class App extends React.Component{
             </div>
         );
     }
-    
 };
 
 export default App;
