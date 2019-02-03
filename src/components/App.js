@@ -11,6 +11,9 @@ class App extends React.Component {
             params: {query: term},
 
         });
+        this.setState({
+            images: response.data
+        });
         console.log(response.data.results.length);
 
         // normal fetching of data using access key
@@ -31,6 +34,7 @@ class App extends React.Component {
         return (
             <div className="ui container" style={{marginTop: '10px'}}>
                 <SearchBar onSubmit={this.onSearchSubmit} />
+  e          
             </div>
         );
     }

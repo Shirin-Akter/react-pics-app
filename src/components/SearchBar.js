@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
                         />
                     </div>
                 </form>
-                <h2>{this.state.term}</h2>
+            
             </div>
         );
     }
